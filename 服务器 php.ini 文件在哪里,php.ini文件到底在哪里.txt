@@ -25,7 +25,7 @@ phpinfo();
 
 termux里始终没有找到php.ini文件
 
-查找办法：
+查找办法：8
 
 退出php5.2文件夹到上级目录，然后执行以下查找命令：
 
@@ -51,5 +51,10 @@ Loaded Configuration File:xxxxxxxxx
 也许是没有安装Apache服务器
 
 
+安装之后也没有
 
 termux里始终没有找到php.ini文件
+
+
+
+
