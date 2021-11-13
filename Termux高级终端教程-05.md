@@ -136,4 +136,4 @@ ls /data/data/com.termux/files/usr/bin|grep pip
 原来我们的pip3变成了pip3.8了啊
 原来我们的pip3变成了pip3.8了啊
 作者：小猪呐
-出处：www.cnblogs.com/xiaozhu2020/p/Termux-05.html
+出处：cnblogs.com/xiaozhu2020/p/Termux-05.html
