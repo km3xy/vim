@@ -1,0 +1,17 @@
+dpkg --configure -a 
+在termux深度系统中，使用apt-get安装软件
+
+在termux深度系统中，使用pkg install安装软件,终端提示:E: dpkg 被中断,您必须手工运行 dpkg --configure -a解决此问题 的解决办法如下：
+
+按照提示提示.终端执行:
+
+ dpkg --configure -a
+
+然后pkg upgrade
+
+
+
+
+
+
+
