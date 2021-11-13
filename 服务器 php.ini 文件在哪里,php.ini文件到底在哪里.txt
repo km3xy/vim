@@ -1,0 +1,55 @@
+服务器 php.ini 文件在哪里,php.ini文件到底在哪里？_PHP教程 
+
+
+假如php版本是5.2.x
+
+如果是lamp环境，则php的源文件php-5.2.x.tar.gz解压后会有一个php-5.2.x的文件夹。
+
+在php-5.2.x的文件夹下进行./configure --prefix=/opt/php5.2, make, make intall，
+
+然后会在/opt/下生产php5.2文件夹(该文件夹是运行时需要的)。
+
+安装成功后，打开phpinfo文件。
+
+[php]
+
+phpinfo();
+
+phpinfo();
+
+属性：Configuration File (php.ini) Path 里有php.ini指向的路径。
+
+但是，进入该路径，发现跟么没有php.ini文件，那么php.ini到底在哪呢？
+
+也许是没有安装Apache服务器
+
+termux里始终没有找到php.ini文件
+
+查找办法：
+
+退出php5.2文件夹到上级目录，然后执行以下查找命令：
+
+find ./ -name "php.ini*"
+
+查找结果：(我自己的环境)
+
+./php-5.2.17/php.ini-recommended
+
+./php-5.2.17/php.ini-dist
+
+哦，原来在php-5.2.x解压后的文件夹啊！
+
+cp ./php-5.2.17/php.ini-dist php5.2/
+
+重启Apache
+
+再刷新phpinfo文件，即找到自己的php.ini文件了。
+
+Loaded Configuration File:xxxxxxxxx
+
+
+也许是没有安装Apache服务器
+
+
+
+termux里始终没有找到php.ini文件
