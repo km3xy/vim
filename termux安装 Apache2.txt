@@ -4,6 +4,8 @@ Termux 支持的开发环境很强，可以完美的运行 C、Python、Java、P
 
 编辑器
 写代码前总得折腾一下编辑器，毕竟磨刀不误砍柴工嘛。Termux 支持多种编辑器，完全可以满足日常使用需求。
+8
+
 
 Emacs
 据说Emacs是神的编辑器，我这种小菜鸡还不会使用哎，但是 Termux 官方已经封装好了 Emacs了，我们安装起来就会简单很多:
@@ -137,3 +139,6 @@ ls /data/data/com.termux/files/usr/bin|grep pip
 原来我们的pip3变成了pip3.8了啊
 作者：小猪呐
 出处：https://www.cnblogs.com/xiaozhu2020/p/Termux-05.html
+
+
+
