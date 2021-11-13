@@ -1,0 +1,31 @@
+pwd (显示目前所在的目录)
+pwd 是 Print Working Directory 的缩写，也就是显示目前所在目录的命令。
+
+[root@www ~]# pwd [-P]
+选项与参数：
+
+-P ：显示出确实的路径，而非使用连结 (link) 路径。
+实例：单纯显示出目前的工作目录：
+
+[root@www ~]# pwd
+/root   <== 显示出目录啦～
+实例显示出实际的工作目录，而非连结档本身的目录名而已。
+
+[root@www ~]# cd /var/mail   <==注意，/var/mail是一个连结档
+[root@www mail]# pwd
+/var/mail         <==列出目前的工作目录
+[root@www mail]# pwd -P
+/var/spool/mail   <==怎么回事？有没有加 -P 差很多～
+[root@www mail]# ls -ld /var/mail
+lrwxrwxrwx 1 root root 10 Sep  4 17:54 /var/mail -> spool/mail
+# 看到这里应该知道为啥了吧？因为 /var/mail 是连结档，连结到 /var/spool/mail 
+# 所以，加上 pwd -P 的选项后，会不以连结档的数据显示，而是显示正确的完整路径啊！
+mkdir (创建新目录)
+如果想要创建新的目录的话，那么就使用mkdir (make directory)吧。
+
+语法：
+
+mkdir [-mp] 目录名称
+
+
+
