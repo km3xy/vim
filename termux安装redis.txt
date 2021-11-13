@@ -1,1 +1,68 @@
-1
+
+dpkg --configure -a 
+在termux深度系统中，使用apt-get安装软件
+
+在termux深度系统中，使用pkg install安装软件,终端提示:E: dpkg 被中断,您必须手工运行 dpkg --configure -a解决此问题 的解决办法如下：
+
+按照提示提示.终端执行:
+
+ dpkg --configure -a
+
+然后pkg upgrade
+
+然后切换源
+8
+先安装Stone Termux管理工具
+
+
+https://gitee.com/st1020/Stone-Termux-Tool/tree/master
+
+
+https://gitee.com/st1020/
+
+
+安装
+
+然后安装Stone Termux管理工具到termux系统
+
+
+然后切换源，清华源
+
+
+然后pkg upgrade
+
+
+pkg install redis
+
+//pkg install redis  这里是小写
+
+
+
+Checking availability of current mirror: ok
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  redis
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 592 kB of archives.
+After this operation, 2253 kB of additional disk space will be used.
+Get:1 https://grimler.se/termux-packages-24 stable/main aarch64 redis aarch64 6.2.4 [592 kB]
+Fetched 592 kB in 3s (171 kB/s)
+Selecting previously unselected package redis.
+(Reading database ... 20894 files and directories currently installed.)
+Preparing to unpack .../redis_6.2.4_aarch64.deb ...
+Unpacking redis (6.2.4) ...
+Setting up redis (6.2.4) ...
+~ $ redis-server
+32047:C 10 Nov 2021 18:24:15.183 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+32047:C 10 Nov 2021 18:24:15.183 # Redis version=6.2.4, bits=64, commit=00000000, modified=0, pid=32047, just started
+32047:C 10 Nov 2021 18:24:15.183 # Warning: no config
+
+
+$ redis-server//起动redis
+
+
+termux安装redis成功
+
+
